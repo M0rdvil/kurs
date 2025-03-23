@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-light {
+	--night: ##1a1a1aff;
+	--davys-gray: #4d4d4dff;
+	--battleship-gray: #999999ff;
+	--platinum: #e6e6e6ff;
+
+	--primary: #d8d8d8ff;
+	--secondary: #1a1a1aff;
+	--accent-a: #999999ff; /* Light */
+	--accent-b: #656565ff; /* Dark */
+}
+
+.theme-dark {
+	--primary: #1a1a1aff;
+	--secondary: #d8d8d8ff;
+	--accent-a: #656565ff;
+	--accent-b: #999999ff;
+}
+
+button {
+	background-color: var(--primary);
+}
+
+label {
+	font-size: small;
+}
+
+input {
+	padding-left: 0.5rem;
+	background-color: var(--primary);
+	border-radius: 0.25rem;
+	min-height: 2rem;
+}
+
+input::placeholder {
+	font-size: small;
+}
+
